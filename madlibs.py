@@ -1,6 +1,8 @@
 """A madlib game that compliments its users."""
 
+from email.mime import nonmultipart
 from random import choice
+from unicodedata import name
 
 from flask import Flask, render_template, request
 
@@ -30,7 +32,9 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return """Hi! This is the home page."
+    <p>
+    <a href="/hello">Click me to go to the game's page</a></p> """
 
 
 @app.route("/hello")
@@ -49,6 +53,28 @@ def greet_person():
     compliment = choice(AWESOMENESS)
 
     return render_template("compliment.html", person=player, compliment=compliment)
+
+
+@app.route("/game")
+def wants_to_play():
+
+    wants_to_play = request.args.get("play")
+
+    return render_template(wants_to_play)
+    
+        
+    input_name = name
+    input_color = color
+    input_noum = noun
+    input_adjective = adjective
+
+@app.route("/game")
+def show_madlib_form():
+
+    if wants_to_play == "yes":
+        return render_template("game.html")
+    else:
+        return render_template("goodbye.html")    
 
 
 if __name__ == "__main__":
