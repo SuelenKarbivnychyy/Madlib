@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <title>Input from user</title>
+</head>
+<body>
+    
+    <form action="/madlib">
+        What's your name?
+        <input type="text" name="name" id="user-name">
+        <label for="user-name"></label>
+        <p>
+        What is your favorite color?  
+        <input type="text" name="color" id="user-color">
+        <label for="user-color"></label></p>
+
+         <p>      
+        <label for="user-noun">Please enter a noun:</label>
+        <select name="noun" id="user-noun">
+            <option value="cake">Cake</option>
+            <option value="music">Music</option>
+            <option value="love">Love</option>
+            <option value="monkey">Monkey</option>
+            <option value="table">Table</option>
+        </select>   </p> 
+
+        Please choose an adjective:
+        <input type="radio" name="adjective" value="charming" id="adjective-charming">
+        <label for="adjective-charming">Charming</label> 
+        
+        <input type="radio" name="adjective" value="perfect" id="adjective-perfect">
+        <label for="adjective-Perfect">Perfect</label> 
+
+        <input type="radio" name="adjective" value="attractive" id="adjective-attractive">
+        <label for="adjective-attractive">Attractive</label> 
+
+        <input type="radio" name="adjective" value="beautiful" id="adjective-beautiful">
+        <label for="adjective-beautiful">Beautiful</label> 
+
+        <br/><br/>
+        Please choose at least 2 animals:
+        <input type="checkbox" name="animal" value="elephant" id="animal-elephant">
+        <label for="animal-elephant">Elephant</label>
+
+        <input type="checkbox" name="animal" value="lion" id="animal-lion">
+        <label for="animal-lion">Lion</label>
+
+        <input type="checkbox" name="animal" value="duck" id="animal-duck">
+        <label for="animal-duck">Duck</label>
+
+        <input type="checkbox" name="animal" value="ant" id="animal-ant">
+        <label for="animal-elephant">Ant</label>
+
+        <input type="checkbox" name="animal" value="monkey" id="animal-monkey">
+        <label for="animal-monkey">Monkey</label>
+
+        <input type="checkbox" name="animal" value="dolphin" id="animal-dolphin">
+        <label for="animal-dolphin">Dolphint</label>
+
+        <input type="checkbox" name="animal" value="seal" id="animal-seal">
+        <label for="animal-elephant">Seal</label>
+        <br/> <br/>
+        <label for="lang-select">Choose a action:</label>
+        <select name="action" id="lang-select">
+            <option value="laughing">Laughing</option>
+            <option value="stering">Stering</option>
+            <option value="mocking">Mocking</option>
+            <option value="dancing">Dancing</option>
+        </select>    
+
+        <br/> <br/>
+        <input type="submit">
+    </form>
+    <br/><br/>   
+    <!-- form to next mad list -->
+    <form action="/madlib">
+
+        Please select 4 plural noun from the list:
+        <input type="checkbox" name="plural_noun" value="houses" id="houses">
+        <label for="houses">Houses</label>
+
+        <input type="checkbox" name="plural_noun" value="boats" id="boats">
+        <label for="boats">Boats</label>
+
+        <input type="checkbox" name="plural_noun" value="cats" id="cats">
+        <label for="cats">Cats</label>
+
+        <input type="checkbox" name="plural_noun" value="wishes" id="wishes">
+        <label for="wishes">Wishes</label>
+
+        <input type="checkbox" name="plural_noun" value="pennies" id="pennies">
+        <label for="pennies">Pennies</label>
+
+        <input type="checkbox" name="plural_noun" value="teeth" id="teeth">
+        <label for="teeth">Teeth</label>
+
+        <input type="checkbox" name="plural_noun" value="elves" id="elves">
+        <label for="elves">Elves</label>
+
+        <input type="checkbox" name="plural_noun" value="oases" id="oases">
+        <label for="oases">Oases</label>
+
+        <input type="checkbox" name="plural_noun" value="mice" id="mice">
+        <label for="mice">Mice</label>
+
+        <br/><br/>
+        <label for="lang-select">Choose 1 verb:</label>
+        <select name="noun1" id="lang-select">
+            <option value="read">Read</option>
+            <option value="skip">Skip</option>
+            <option value="Scream">Scream</option>
+            <option value="Sing">Sing</option>
+        </select>    
+        <br/>  <br/>  
+        <label for="lang-select">Choose 1 more verb:</label>
+        <select name="noun2" id="lang-select">    
+            <option value="Paint">Paint</option>
+            <option value="Love">Love</option>
+            <option value="Hope">Hope</option>
+            <option value="Realize">Realize</option>
+        </select>
+        <br/><br/>
+        <label for="ing-verb">Enter a Transitive verb </label>
+        <input type="text" name="transitive_verb" id="ing-verb">
+        <br/><br/>
+        <label for="normal_verb">Enter a Transitive verb </label>
+        <input type="text" name="verb" id="normal_ver">
+        <br/><br/>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
