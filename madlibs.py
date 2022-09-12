@@ -2,6 +2,7 @@
 
 from email.mime import nonmultipart
 import random
+from random import sample
 # from tkinter.ttk import Separator
 # from turtle import color
 from unicodedata import name
@@ -52,9 +53,13 @@ def greet_person():
 
     player = request.args.get("person")
 
-    compliment = random.choice(AWESOMENESS)
+    # compliment = random.choice(AWESOMENESS)
+    compliments = sample(AWESOMENESS, 3)
+    # compliments = ", ".join(compliment[:-1])
+    # compliments += " and " + compliment[-1]
+   
 
-    return render_template("compliment.html", person=player, compliment=compliment)
+    return render_template("compliment.html", person=player, compliments=compliments)
 
 
 
@@ -87,8 +92,7 @@ def show_madlib():
     
     # new madlib
     random_choise = random.randint(2,4)    
-    random_choise = 3
-    
+        
     if random_choise == 2:
 
         plural_noun = request.args.getlist("plural_noun")
