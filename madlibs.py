@@ -35,9 +35,8 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return """Hi! This is the home page."
-    <p>
-    <a href="/hello">Click me to go to the game's page</a></p> """
+    return render_template("initial_page.html")
+    
 
 
 @app.route("/hello")
